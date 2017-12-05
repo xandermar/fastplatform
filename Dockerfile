@@ -34,8 +34,8 @@ RUN { \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
 ARG workdir
-ARG DRUPAL_VERSION
-ARG DRUPAL_MD5
+ARG drupalversion
+ARG drupalmd5
 
 WORKDIR $workdir
 

@@ -5,6 +5,6 @@ services:
       context: .
       args:
         - workdir="/var/www/html/hr"
-        - DRUPAL_VERSION=8.4.2
-        - DRUPAL_MD5=a2b294d82ce751f93ba600f2de7884f4hr"
+        - drupalversion=8.4.2
+        - drupalmd5=a2b294d82ce751f93ba600f2de7884f4hr"
     container_name: hr_website
