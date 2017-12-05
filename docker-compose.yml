@@ -1,0 +1,9 @@
+version: "2"
+services:
+  drupal:
+    build: .
+    environment:
+      - WORKDIR="/var/www/html/hr"
+      - DRUPAL_VERSION=8.4.2
+      - DRUPAL_MD5=a2b294d82ce751f93ba600f2de7884f4
+    container_name: hr_website
