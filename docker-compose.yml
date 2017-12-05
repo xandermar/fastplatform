@@ -4,7 +4,7 @@ services:
     build:
       context: .
       args:
-        - workdir="/var/www/html/hr"
-        - drupalversion=8.4.2
-        - drupalmd5=a2b294d82ce751f93ba600f2de7884f4hr"
+        workdir: "/var/www/html/hr"
+        drupalversion: 8.4.2
+        drupalmd5: a2b294d82ce751f93ba600f2de7884f4hr
     container_name: hr_website
