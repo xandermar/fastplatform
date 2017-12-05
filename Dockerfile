@@ -33,6 +33,10 @@ RUN { \
 		echo 'opcache.enable_cli=1'; \
 	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
 
+ARG WORKDIR
+ARG DRUPAL_VERSION
+ARG DRUPAL_MD5
+
 WORKDIR ${WORKDIR}
 
 RUN curl -fSL "https://ftp.drupal.org/files/projects/drupal-${DRUPAL_VERSION}.tar.gz" -o drupal.tar.gz \
